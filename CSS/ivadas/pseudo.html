@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      ul li{
+        display: block;
+        float: left;
+        border: 1px solid black;
+        padding: 3px;
+        background-color: black;
+        width:100px;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      a:hover{
+        color: red;
+        font-weight: bold;
+        font-size:20pt;
+      }
+
+      table{
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      tr td, tr th{
+        padding: 10px;
+      }
+
+      tr:first-child{
+        background-color:red;
+      }
+
+      /* tr:nth-child(2n+2){
+        background-color:grey;
+      } */
+
+      tr:hover{
+        background-color:rgba(255, 98, 0, 0.5);
+      }
+
+      td:hover{
+        background-color:red;
+      }
+
+      /* .pirma{
+        background-color:silver;
+      } */
+
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Pagrindinis</a></li>
+      <li><a href="#">Paslaugos</a></li>
+      <li><a href="#">Kontaktai</a></li>
+    </ul>
+    <h1>Statistinė lentelė</h1>
+    <table>
+      <tr>
+        <th class="col1">Nr.</th>
+        <th>Vardas</th>
+        <th>Pavardė</th>
+        <th>Amžius</th>
+        <th>Svoris</th>
+      </tr>
+      <tr class="pirma">
+        <td class="col1">1.</td>
+        <td>Ona</td>
+        <td>Onutė</td>
+        <td>25</td>
+        <td>60</td>
+      </tr>
+      <tr class="antra">
+        <td class="col1">2.</td>
+        <td>Jonas</td>
+        <td>Jonaitis</td>
+        <td>30</td>
+        <td>80</td>
+      </tr>
+      <tr class="pirma">
+        <td class="col1">3.</td>
+        <td>Petras</td>
+        <td>Petraitis</td>
+        <td>35</td>
+        <td>85</td>
+      </tr>
+      <tr class="antra">
+        <td class="col1">4.</td>
+        <td>Vardenis</td>
+        <td>Pavardenis</td>
+        <td>35</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td class="col1">5.</td>
+        <td>Vardenis</td>
+        <td>Pavardenis</td>
+        <td>35</td>
+        <td>85</td>
+      </tr>
+    </table>
+
+  </body>
+</html>

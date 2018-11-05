@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .bigbox{
+        position: relative;
+        top:200px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+      .box1{
+        position: relative;
+        left: 50px;
+        top: 150px;
+        width:100px;
+        height:100px;
+        background-color:rgba(255, 0, 0, 0.5);
+        z-index: 10;
+      }
+      .box2{
+        margin-left: 50px;
+        width:100px;
+        height:100px;
+        background-color:blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bigbox">
+      <div class="box1">
+        box1
+      </div>
+      <div class="box2">
+        box2
+      </div>
+    </div>
+  </body>
+</html>
