@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!-- <style media="screen">
+       .raudona{
+         background-color: blue;
+       }
+     </style> -->
+     <style media="screen">
+       body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+        }
+
+        main {
+          flex: 1 0 auto;
+        }
+     </style>
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+
+   <body>
+     <nav class="blue darken-3">
+       <div class="nav-wrapper">
+         <a href="#!" class="brand-logo">Logo</a>
+         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+           <li><a href="index.html">Pagrindinis</a></li>
+           <li><a href="offers.html">Paslaugos</a></li>
+           <li><a href="contacts.html">Kontaktai</a></li>
+         </ul>
+       </div>
+     </nav>
+
+     <ul class="sidenav" id="mobile-demo">
+       <li><a href="index.html">Pagrindinis</a></li>
+       <li><a href="offers.html">Paslaugos</a></li>
+       <li><a href="contacts.html">Kontaktai</a></li>
+     </ul>
+
+     <main class="container">
+       <h1>Kontaktai</h1>
+     </main>
+
+     <footer class="page-footer blue darken-3">
+       <div class="container">
+         <div class="row">
+
+           <div class="col l6 s12">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.9836000007194!2d25.290128216084597!3d54.709911680287455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96ae1dedd637%3A0x73978617430c730c!2sUlon%C5%B3+g.+5%2C+Vilnius+08240!5e0!3m2!1sen!2slt!4v1541790032655" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+
+           <div class="col l4 offset-l2 s12">
+             <h5 class="white-text">Links</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+             </ul>
+           </div>
+
+           <div class="col s12 m12">
+             <address class="">
+               <dl class="">
+                 <dt>Telefonas</dt>
+                 <dd>8656456465</dd>
+                 <dt>El. paštas</dt>
+                 <dd>zigmantas@gmail.com</dd>
+               </dl>
+             </address>
+           </div>
+
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         © 2014 Copyright Text
+         <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+         </div>
+       </div>
+     </footer>
+
+     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('.sidenav').sidenav();
+       });
+     </script>
+   </body>
+ </html>
