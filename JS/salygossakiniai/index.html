@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        width:100px;
+        height:100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dezute">
+
+    </div>
+    <script type="text/javascript">
+
+      var age = prompt("Iveskite amziu", "");
+
+      if(isNaN(age)){
+        document.write("Prasau iveskite skaiciu");
+      }
+
+      if(age <= 1){
+        document.getElementById("dezute").style.background = "green";
+      }
+      else if(age > 1 && age <= 10){
+        document.getElementById("dezute").style.background = "orange";
+      }
+      else if(age > 10 && age <= 17){
+        document.getElementById("dezute").style.background = "blue";
+      }
+      else if(age >= 18){
+        document.getElementById("dezute").style.background = "red";
+      }
+
+      // if(age >= 18){
+      //   document.getElementById("dezute").style.background = "red";
+      // }
+      // else{
+      //   document.getElementById("dezute").style.background = "blue";
+      // }
+
+    </script>
+  </body>
+</html>

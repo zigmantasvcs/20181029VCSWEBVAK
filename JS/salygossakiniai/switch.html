@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dezute">
+
+    </div>
+    <script type="text/javascript">
+      // 1 - orange
+      // 2 - red
+      // 3 - blue
+      // 4 - purple
+      //  - white
+
+      var kodas = prompt("Iveskite koda", "");
+
+      switch (kodas) {
+        case "1":
+          document.getElementById("dezute").style.background = "orange";
+          break;
+        case "2":
+          document.getElementById("dezute").style.background = "red";
+          break;
+        case "3":
+          document.getElementById("dezute").style.background = "blue";
+          break;
+        case "4":
+          document.getElementById("dezute").style.background = "purple";
+          break;
+        default:
+          document.getElementById("dezute").style.background = "white";
+      }
+
+    </script>
+  </body>
+</html>

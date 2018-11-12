@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+    <script type="text/javascript">
+
+      var dezutes = document.getElementsByClassName("box");
+
+      var spalvosKodas = 5;
+
+      for (var i = 0; i < dezutes.length; i++) {
+        spalvosKodas = spalvosKodas*i;
+
+        if(i % 2 == 0){
+          dezutes[i].style.background = "rgb(255, 0, 0)";
+        }
+        else{
+          dezutes[i].style.background = "blue";
+        }
+      }
+
+    </script>
+  </body>
+</html>
