@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // var text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+      //var tekstoMasyvas = text.split(";");
+      // for (var i = 0; i < tekstoMasyvas.length; i++) {
+      //   console.log(tekstoMasyvas[i]);
+      // }
+
+      var csvFailas = "Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu#Jonas;Jonaitis;25;80;Neturi pinigu"
+
+      var csvMasyvas = csvFailas.split("#");
+
+      document.write("<table border=1>");
+      for (var i = 0; i < csvMasyvas.length; i++) {
+
+        var tekstasIsCsv = csvMasyvas[i].split(";");
+        document.write("<tr>");
+        for (var j = 0; j < tekstasIsCsv.length; j++) {
+
+          document.write("<td>");
+          document.write(tekstasIsCsv[j]);
+          document.write("</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+
+    </script>
+  </body>
+</html>

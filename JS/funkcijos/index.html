@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var x = prompt('ivesk pirma skaiciu', '');
+      var y = prompt('ivesk antra skaiciu', '');
+      spausdintiDviejuSkaiciuSuma(x, y);
+
+
+      spausdintiDviejuSkaiciuSuma(6, 11);
+      spausdintiDviejuSkaiciuSuma(8, 8);
+
+      // funkcijos aprasymas
+      function spausdintiDviejuSkaiciuSuma(a, b) { // a ir b vadiname funkcijos argumentais
+        if(isNaN(a) || isNaN(b)){
+          console.log('Buvo ivesta ne skaiciu');
+        }
+        else{
+          console.log(Number(a)+Number(b));
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      li{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script src="library.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+      var prekiuKrepselis = [];
+
+      while (true) {
+        var preke = prompt('Idek preke', '');
+
+        if(preke == "kasa"){
+          break;
+        }
+        prekiuKrepselis.push(preke);
+      }
+
+      printArrayToOrderedList(prekiuKrepselis);
+
+    </script>
+  </body>
+</html>
