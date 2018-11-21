@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        margin: 0px;
+      }
+      .modal{
+        display:none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        align-items:center;
+        justify-content:center;
+      }
+      .box{
+        display:flex;
+        width:500px;
+        height:500px;
+        background-color: rgba(255,255,255,1);
+        border-radius:20px;
+      }
+      img{
+        display:block;
+        margin:auto;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" name="" id="mygtukas" value="galerija">
+    <div class="modal">
+      <div class="button">
+        <input type="button" name="" id="atgal" value="<<">
+      </div>
+      <div class="box">
+
+        <div class="">
+          <img src="images/image_1.jpg" alt="">
+        </div>
+        <div class="button">
+          <input type="button" name="" id="pirmyn" value=">>">
+        </div>
+      </div>
+
+    </div>
+    <script src="../js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var index = 1;
+      $("#mygtukas").click(function(){
+        index = 1;
+        $(".modal").css({"display":"flex"});
+      });
+
+      $(".modal").click(function(){
+        $(".modal").fadeOut();
+      })
+
+      $("#pirmyn").click(function(){
+        index++;
+        if(index <= 3){
+          $(".box").empty();
+          var naujasPav = $("<img />");
+          naujasPav.prop("src", "images/image_"+index+".jpg");
+          $(".box").append(naujasPav);
+        }
+        else{
+          index--;
+        }
+      })
+
+      $("#atgal").click(function(){
+        index--;
+        if(index > 0){
+          $(".box").empty();
+          var naujasPav = $("<img />");
+          naujasPav.prop("src", "images/image_"+index+".jpg");
+          $(".box").append(naujasPav);
+        }
+        else{
+          index++;
+        }
+      })
+    </script>
+  </body>
+</html>

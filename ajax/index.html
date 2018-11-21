@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      var studentas1 = {
+        name: "Jonas",
+        surname: "Jonaitis",
+        age: 18
+      };
+      var studentas2 = {
+        name: "Onutė",
+        surname: "Pakalnutė",
+        age: 25
+      };
+
+      var studentai = [studentas1, studentas2, studentas2, studentas2];
+
+      document.write("<table border=1>");
+      document.write("<tr><th>Nr.</th><th>Vardas</th><th>Pavardė</th></tr>");
+      $.each(studentai, function(y, x){
+        document.write("<tr>");
+
+        document.write("<td>");
+        document.write(x+1);
+        document.write("</td>");
+
+        document.write("<td>");
+        document.write(y.name);
+        document.write("</td>");
+
+        document.write("<td>");
+        document.write(value.surname);
+        document.write("</td>");
+
+        document.write("</tr>");
+        //document.write(index+1 + " " + value.name + "<br>");
+      })
+      document.write("</table>");
+
+    </script>
+  </body>
+</html>

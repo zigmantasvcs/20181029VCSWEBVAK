@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="box">
+
+    </div>
+    <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $.ajax({
+        url: "http://kitchenoffice.eu/service/computer.php",
+        dataType: "json"
+      }).done(function(data){
+        //alert(data[3].image);
+        var img = $("<img />");
+        img.prop("src", data[3].image);
+        $(".box").append(img);
+        //alert(data[3].image);
+        // $.each(data, function(index, item){
+        //   $("#day"+item.date.slice(-2)).append(item.event);
+        // })
+      }).fail(function(response, status, message){
+        alert(response.status);
+
+        // pridetas atvejis kai kas nors sufailina read.php, 6i dalis loge i6spausdins problma
+        //alert(thrownException);
+        console.log(response.status); //404
+        console.log(ajaxOptions); // error
+        console.log(thrownException); // Not found
+      });
+    </script>
+  </body>
+</html>

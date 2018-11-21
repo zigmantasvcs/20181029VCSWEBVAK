@@ -40,7 +40,13 @@
       // }
 
       $(".box").click(function(){
-        $(this).css({"background-color":"red"})
+        console.log($(this).css("background-color"));
+        if($(this).css("background-color") == "rgb(128, 0, 128)"){
+          $(this).css({"background-color":"red"})
+        }
+        else{
+          $(this).css({"background-color":"purple"});
+        }
       })
 
     </script>

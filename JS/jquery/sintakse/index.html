@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" name="" id="tekstas" value="">
+    <input type="button" name="" id="knopke" value="OK">
+    <div class="label">
+      <ol>
+
+      </ol>
+    </div>
+    <script src="../js/jquery-3.3.1.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      $("#knopke").click(function(){
+        spausdintiTekstaILista();
+      });
+
+      $("#tekstas").keypress(function(event){
+        if(event.which == 13){
+          spausdintiTekstaILista();
+        }
+      });
+
+      function spausdintiTekstaILista(){
+        // veiksmai kuriuos atliksiu paspaudus knopke
+
+        var laukelioTekstas = $("#tekstas").val();
+        $("#tekstas").val("");
+        //alert(laukelioTekstas);
+        //$("#knopke").after("<br />" + laukelioTekstas);
+        // tekstas grynas
+        //$(".label").text(laukelioTekstas + "<br />" + laukelioTekstas);
+        //$(".label").html(laukelioTekstas + "<br />" + laukelioTekstas);
+        $(".label ol").prepend("<li>"+laukelioTekstas+"</li>");
+        $("#tekstas").focus();
+      }
+
+    </script>
+
+  </body>
+</html>
